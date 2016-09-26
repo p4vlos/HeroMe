@@ -1,10 +1,11 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2=""
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.pavlosnicolaou.herome.Fragments.MainFragment"
-    android:background="#3D3E3E">
+    android:background="@drawable/hero_bg_gradient">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -24,8 +25,8 @@
             android:weightSum="1">
 
             <ImageView
-                android:layout_width="379dp"
-                android:layout_height="wrap_content"
+                android:layout_width="328dp"
+                android:layout_height="90dp"
                 android:src="@drawable/top_banner_bar"
                 android:contentDescription=""
                 android:padding="0dp"
@@ -39,10 +40,79 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="167dp"
+            android:layout_height="117dp"
             app:srcCompat="@drawable/heroes"
             android:id="@+id/imageView3"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp" />
+
+        <Button
+            android:text="Came by accident"
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/hero_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColorLink="?attr/colorBackgroundFloating"
+            android:textColor="#FFD200"
+            android:drawableLeft="@drawable/lightning"
+            android:drawableRight="@drawable/item_selected"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="55dp" />
+
+        <Button
+            android:text="Genetic mutation"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/hero_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColorLink="?attr/colorBackgroundFloating"
+            android:textColor="#FFD200"
+            android:drawableLeft="@drawable/atomic"
+            android:drawableRight="@drawable/item_selected"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="55dp" />
+
+        <Button
+            android:text="born with them"
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/hero_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColorLink="?attr/colorBackgroundFloating"
+            android:textColor="#FFD200"
+            android:drawableLeft="@drawable/rocket"
+            android:drawableRight="@drawable/item_selected"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="55dp" />
+
+        <Button
+            android:text="choose powers"
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            style="@style/Widget.AppCompat.Button"
+            android:background="@drawable/hero_solid_button"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColorLink="?attr/colorBackgroundFloating"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#FFD200"
+            android:textColor="#10161D"
+            android:textSize="22sp"
+            android:layout_height="55dp" />
     </LinearLayout>
 
 </FrameLayout>
